@@ -28,57 +28,68 @@ const marginTop20 = css`
 const marginLeft20 = css`
   margin-left: 20px;
 `;
+const Image = styled.img`
+  object-fit: contain;
+`;
+const Container = styled.div`
+  max-width: 500px;
+  margin: 0 auto;
+`;
 export default function App() {
   return (
-    <StackWithFlex gap="8px">
-      <Text>With Flexbox</Text>
-      <Card>
-        <StackWithFlex gap="8px">
-          <Box>one</Box>
-          <Box css={marginTop20}>two</Box>
-          <Box>three</Box>
-        </StackWithFlex>
-      </Card>
-      <Text>With CSS Grid</Text>
-      <Card>
-        <StackWithGrid gap="8px">
-          <Box>one</Box>
-          <Box css={marginTop20}>two</Box>
-          <Box>three</Box>
-        </StackWithGrid>
-      </Card>
-      <Text>With StackItem </Text>
-      <Card>
-        <StackWithStackItem gap="8px">
-          <Box>one</Box>
-          <Box css={marginTop20}>two</Box>
-          <Box>three</Box>
-        </StackWithStackItem>
-      </Card>
-      <Text>With Flexbox</Text>
-      <Card>
-        <StackWithFlex gap="8px" direction="horizontal">
-          <Box>one</Box>
-          <Box css={marginLeft20}>two</Box>
-          <Box>three</Box>
-        </StackWithFlex>
-      </Card>
-      <Text>With CSS Grid</Text>
-      <Card>
-        <StackWithGrid gap="8px" direction="horizontal">
-          <Box>one</Box>
-          <Box css={marginLeft20}>two</Box>
-          <Box>three</Box>
-        </StackWithGrid>
-      </Card>
-      <Text>With StackItem </Text>
-      <Card>
-        <StackWithStackItem gap="8px" direction="horizontal">
-          <Box>one</Box>
-          <Box css={marginLeft20}>two</Box>
-          <Box>three</Box>
-        </StackWithStackItem>
-      </Card>
-    </StackWithFlex>
+    <Container>
+      <StackWithFlex gap="8px">
+        <Image src="/code-vertical-stack.png" />
+        <Text>With Flexbox</Text>
+        <Card>
+          <StackWithFlex gap="8px">
+            <Box>one</Box>
+            <Box css={marginTop20}>two</Box>
+            <Box>three</Box>
+          </StackWithFlex>
+        </Card>
+        <Text>With CSS Grid</Text>
+        <Card>
+          <StackWithGrid gap="8px">
+            <Box>one</Box>
+            <Box css={marginTop20}>two</Box>
+            <Box>three</Box>
+          </StackWithGrid>
+        </Card>
+        <Text>With StackItem </Text>
+        <Card>
+          <StackWithStackItem gap="8px">
+            <Box>one</Box>
+            <Box css={marginTop20}>two</Box>
+            <Box>three</Box>
+          </StackWithStackItem>
+        </Card>
+        <Image src="/code-horizontal-stack.png" />
+        <Text>With Flexbox</Text>
+        <Card>
+          <StackWithFlex gap="8px" direction="horizontal">
+            <Box>one</Box>
+            <Box css={marginLeft20}>two</Box>
+            <Box>three</Box>
+          </StackWithFlex>
+        </Card>
+        <Text>With CSS Grid</Text>
+        <Card>
+          <StackWithGrid gap="8px" direction="horizontal">
+            <Box>one</Box>
+            <Box css={marginLeft20}>two</Box>
+            <Box>three</Box>
+          </StackWithGrid>
+        </Card>
+        <Text>With StackItem </Text>
+        <Card>
+          <StackWithStackItem gap="8px" direction="horizontal">
+            <Box>one</Box>
+            <Box css={marginLeft20}>two</Box>
+            <Box>three</Box>
+          </StackWithStackItem>
+        </Card>
+      </StackWithFlex>
+    </Container>
   );
 }
