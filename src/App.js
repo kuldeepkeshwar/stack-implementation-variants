@@ -9,7 +9,11 @@ import { Stack as StackWithStackItem } from "./StackWithStackItem";
 
 const yellowish = "rgb(245, 186, 76)";
 const bluish = "rgb(117, 172, 253)";
-
+const Text = styled.div`
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+`;
 const Card = styled.div`
   background: ${({ bg }) => bg || yellowish};
 `;
@@ -26,7 +30,8 @@ const marginLeft20 = css`
 `;
 export default function App() {
   return (
-    <StackWithFlex gap="16px">
+    <StackWithFlex gap="8px">
+      <Text>With Flexbox</Text>
       <Card>
         <StackWithFlex gap="8px">
           <Box>one</Box>
@@ -34,6 +39,7 @@ export default function App() {
           <Box>three</Box>
         </StackWithFlex>
       </Card>
+      <Text>With CSS Grid</Text>
       <Card>
         <StackWithGrid gap="8px">
           <Box>one</Box>
@@ -41,6 +47,7 @@ export default function App() {
           <Box>three</Box>
         </StackWithGrid>
       </Card>
+      <Text>With StackItem </Text>
       <Card>
         <StackWithStackItem gap="8px">
           <Box>one</Box>
@@ -48,7 +55,7 @@ export default function App() {
           <Box>three</Box>
         </StackWithStackItem>
       </Card>
-
+      <Text>With Flexbox</Text>
       <Card>
         <StackWithFlex gap="8px" direction="horizontal">
           <Box>one</Box>
@@ -56,6 +63,7 @@ export default function App() {
           <Box>three</Box>
         </StackWithFlex>
       </Card>
+      <Text>With CSS Grid</Text>
       <Card>
         <StackWithGrid gap="8px" direction="horizontal">
           <Box>one</Box>
@@ -63,6 +71,7 @@ export default function App() {
           <Box>three</Box>
         </StackWithGrid>
       </Card>
+      <Text>With StackItem </Text>
       <Card>
         <StackWithStackItem gap="8px" direction="horizontal">
           <Box>one</Box>

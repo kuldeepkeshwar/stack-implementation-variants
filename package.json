@@ -1,11 +1,8 @@
 {
-  "name": "react",
+  "name": "build-stack-component-with-flexbox-grid",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "@emotion/core": "10.0.28",
