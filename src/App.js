@@ -40,7 +40,7 @@ export default function App() {
     <Container>
       <StackWithFlex gap="8px">
         <Image src="/code-vertical-stack.png" />
-        <Text>With Flexbox</Text>
+        <Text>With Flexbox ( * + * )</Text>
         <Card>
           <StackWithFlex gap="8px">
             <Box>one</Box>
@@ -65,7 +65,7 @@ export default function App() {
           </StackWithStackItem>
         </Card>
         <Image src="/code-horizontal-stack.png" />
-        <Text>With Flexbox</Text>
+        <Text>With Flexbox ( * + * )</Text>
         <Card>
           <StackWithFlex gap="8px" direction="horizontal">
             <Box>one</Box>
