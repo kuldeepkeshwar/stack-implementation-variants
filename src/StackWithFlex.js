@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import { styled } from "@filbert-js/macro";
 
 function flexStyles({ direction = "vertical", gap }) {
   if (direction === "vertical") {

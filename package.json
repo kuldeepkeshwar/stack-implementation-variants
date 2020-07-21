@@ -5,8 +5,8 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@emotion/core": "10.0.28",
-    "@emotion/styled": "10.0.27",
+    "@filbert-js/core": "0.0.7",
+    "@filbert-js/macro": "0.0.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-scripts": "3.0.1"
